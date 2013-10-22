@@ -1,0 +1,105 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	text-rendering: optimizelegibility;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+}
+a, a:active, a:hover, a:visited{
+	color: #444;
+	text-decoration: none;
+
+}
+#main{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #111;
+
+}
+#floatingTitle{
+	position: fixed;
+	margin: auto;
+	top: .1em;
+	z-index: 999;
+	
+
+}
+#floatingTitle h1{
+	position: relative;
+	color: #222;
+	font-size: 3em;
+	-webkit-margin-before:0;
+	-webkit-margin-after:0;
+	top: .5em;
+	left: .5em;
+}
+.white{
+	color: #EEE;
+}
+.scatolo{
+	background:black;
+	height: auto;
+	width: auto;
+	max-width: 25% ;
+	overflow: hidden;
+	display: inline-block;
+	
+}
+.scatolo img{
+	width: 100%;
+	-webkit-transition: all 0.3s ease-in-out;  /* Chrome 1-25, Safari 3.2+ */
+	-moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+	-o-transition: all 0.3s ease-in-out;  /* Opera 10.50–12.00 */
+	transition: all 0.3s ease-in-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-ms-transform: scale(1);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0, M12=-0, M21=0, M22=0);
+}
+.scatolo img:hover  {
+	opacity: .3;
+	-moz-transform: scale(2);
+	-webkit-transform: scale(2);
+	-o-transform: scale(2);
+	transform: scale(2);
+	-ms-transform: scale(2);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=2, M12=-0, M21=0, M22=2);
+	-webkit-transition: all 0.3s ease-in-out;  /* Chrome 1-25, Safari 3.2+ */
+	-moz-transition: all 0.3s ease-in-out;  /* Firefox 4-15 */
+	-o-transition: all 0.3s ease-in-out;  /* Opera 10.50–12.00 */
+	transition: all 0.3s ease-in-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+#footer{
+	position: fixed;
+	z-index: 999;
+	bottom: .5em;
+	left: 1em;
+}
+#footer img{
+
+	bottom: -5px;
+	position: relative;
+
+}
+@media all and (max-width:1024){
+	.scatolo{
+		max-width: 33.333333%;
+	}
+}
+@media all and (max-width:800){
+	.scatolo{
+		max-width: 50%;
+	}
+}
+@media all and (max-width:500){
+		.scatolo{
+		max-width: 100%;
+	}
+}
